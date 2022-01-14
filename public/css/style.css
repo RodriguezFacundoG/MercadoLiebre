@@ -1,0 +1,180 @@
+* {
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;  
+      
+}
+
+body {
+    background-color: #ebebeb;   
+    color: #666
+}
+
+header {
+    background-color: #EAC926;
+}
+img {
+    width: 100%;
+}
+.search-bar {
+    text-align: center;
+    margin: auto;    
+}
+.fa-search {
+    background-color:#ebebeb;
+    padding: 3px;
+    border-radius: 3px;
+    
+}
+.fa-bars {
+    font-size: 22px;
+}
+.burger-menu {    
+    text-align: center;    
+    background: #1259c3;
+    margin: auto;
+    width: 28px;
+    height: 28px;
+    border-radius: 5px;
+    color: #ebebeb;
+
+
+}
+h3 {
+    text-align: center;
+}
+nav a, footer p{
+    font-size: 12px;    
+    text-decoration: none;
+    color: #666;
+}    
+
+main {
+    margin: auto;
+    width: 90vw;
+   
+}
+
+main article {
+    margin: 5px 0;
+    background-color: white;
+    
+}
+
+.prod {
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+}
+
+.truck-container {
+    display: flex;      
+    align-items: center;
+    justify-content:center;
+    position: relative;
+}
+
+
+.fa-truck {
+    color: #39b54a;
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -30px;   
+   
+}
+
+.discount {
+    color: #39b54a;
+}
+
+.description {
+    display: none;
+}
+
+h2 {
+    font-size: 24px;
+}
+.prod-price-container {
+    display: flex;
+    align-items: center;
+}
+
+.price {
+    font-size: 18px;
+    width: 30%;
+}
+.discount{
+    font-size: 16px;
+    width: 70%;
+}
+.prod-name {
+    font-size: 16px;
+}
+
+footer {
+    background-color: white;
+    padding: 10px;
+}
+
+.footer-info {
+    text-align: center;    
+}
+
+footer article i{
+    color: #1259c3;    
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.copyright {
+    margin: 10px 0;
+}
+
+nav {
+    display: none;
+}
+
+
+@media (min-width: 361px) and (max-width: 768px){
+    .description {
+        display: block;
+    }
+    main article {
+        box-shadow: 0px 0px 10px rgb(100,100,100 );
+    }
+    nav {
+        display: block;
+    }
+    .burger-menu{
+        display: none;
+    }
+
+}
+
+@media (min-width: 769px) {
+    /* Estilos de Desktop */
+    .description {
+        display: block;
+    }
+    main article {
+        box-shadow: 0px 0px 10px rgb(100,100,100 );
+    }
+    nav {
+        display: block;
+    }
+    .burger-menu{
+        display: none;
+    }
+}
+
+
+
+
+
+
