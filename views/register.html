@@ -4,26 +4,190 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Estilos de fuente -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+
+    <!-- URL a web de íconos -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/register.css">
+
     <title>Document</title>
 </head>
 <body>
-    <form action="" method="POST">
-        <input type="text" placeholder="Nombre">
-        <input type="text" placeholder="Apellido">
-        <input type="text" placeholder="Nombre de usuario">
-        <input type="email" placeholder="E-mail">
+    <header>
+        <div class="header-container">
+            <div class="logo"> 
+                <img src="/images/logo-mercado-liebre.svg" class="logo" alt="logo-mercadoliebre">
+            </div>
+            <section class="search-bar">
+                <div class="search-bar--background">
+                    <input type="text" placeholder="Buscar productos, marcas">
+                    <i class="fas fa-search"></i>
+                    
+                </div>
+            </section>
 
-        <label for="birth-date">Fecha de nacimiento</label>
-        <input type="date" if="birth-date">
-
-        <input type="text" placeholder="Domicilio">
-        <label for="user-type">Perfil del usuario</label>
-        <input type="radio" name="user-type" value="comprador">
-        <input type="radio" name="user-type" value="vendedor">
+            <section class="header__title__container">
+                <i class="fas fa-hand-holding-usd"></i>
+                <h3>Comprá en cuotas y sin tarjeta de crédito</h3>
+            </section>
+        </div>
         
+        <nav>
+            <ul class="nav-shop">
+                <li>
+                    <a href="/ofertas">Ofertas</a>
+                </li>
+                <li>
+                    <a href="/tiendas-oficiales">Tiendas Oficiales</a>
+                </li>
+                <li>
+                    <a href="/vender">Vender</a>
+                </li>
+                <li>
+                    <a href="/ayuda">Ayuda</a>  
+                </li>                             
+            </ul>
+            <ul class="nav-personal">
+                <li>
+                    <a href="/crea-tu-cuenta">Creá tu cuenta</a>
+                    <i class="far fa-id-card"></i>
+                </li>
+                <li>
+                    <a href="/ingresa">Ingresá</a>
+                    <i class="fas fa-sign-in-alt"></i>
+                </li>
+                <li>
+                    <a href="/mis-compras">Mis compras</a>
+                    <i class="fas fa-shopping-basket"></i>
+                </li>                                            
+            </ul>
+        </nav>
+        <section class="burger-menu-container">   
 
-        
-    </form>
+            <div class="burger-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+
+        </section>
+    </header>
+    <main>        
+
+        <form action="" method="POST" class="form">
+            <div class="form-container">
+                <input type="text" placeholder="Nombre" class="form-container__input">
+                <span class="form-container__error"></span>
+            </div>
+            <div class="form-container">
+                <input type="text" placeholder="Apellido" class="form-container__input">
+                <span class="form-container__error"></span>
+            </div>
+            <div class="form-container">
+                <input type="text" placeholder="Nombre de usuario" class="form-container__input">
+                <span class="form-container__error"></span>
+            </div>
+            <div class="form-container">
+                <input type="email" placeholder="E-mail" class="form-container__input">
+                <span class="form-container__error"></span>
+            </div>     
+            <div class="form-container">
+                <label for="birth-date" class="form-container__label">Fecha de nacimiento</label>
+                <input type="date" id="birth/date" class="form-container__input">
+                <span class="form-container__error"></span>
+            </div>
+            <div class="form-container">
+                <input type="text" placeholder="Domicilio" class="form-container__input">
+                <span class="form-container__error"></span>
+            </div>
+            <div class="form-container">
+                <label for="user-type" class="form-container__label">Perfil del usuario</label>
+                <section class="radio-container">
+                    <article class="radio-container__article">
+                        <input type="radio" name="user-type" value="comprador" class="form-container__radio">
+                        <label class="form-container__label-radio">Comprador</label> 
+                    </article>
+                    <article class="radio-container__article">
+                        <input type="radio" name="user-type" value="vendedor" class="form-container__radio">
+                        <label class="form-container__label-radio">Vendedor</label>
+                    </article>
+                </section>
+                <span class="form-container__error "></span>
+            </div>
+            <div class="form-container">
+                <label class="form-container__label">Intereses</label>        
+                <section class="radio-container">
+                    <article class="radio-container__article">
+                        <input type="checkbox" name="" value="electro" class="form-container__check">
+                        <labe class="form-container__label-check"l>Electro</label>
+                    </article>
+                    <article class="radio-container__article">
+                        <input type="checkbox" name="" value="moda" class="form-container__check">
+                        <labe class="form-container__label-check"l>Moda</label>
+                    </article>
+                    <article class="radio-container__article">
+                        <input type="checkbox" name="" value="hogar" class="form-container__check">
+                        <label class="form-container__label-check">Hogar</label>
+                    </article>
+                    <article class="radio-container__article">
+                        <input type="checkbox" name="" value="jugueteria" class="form-container__check">
+                        <label class="form-container__label-check">Jugueteria</label>
+                    </article>
+                    <article class="radio-container__article">
+                        <input type="checkbox" name="" value="vida sana" class="form-container__check">    
+                        <label class="form-container__label-check">Vida sana</label>
+                    </article>                    
+                    <span class="form-container__error "></span>
+                </section>
+            </div>           
+            <div class="form-container">
+                <label for="" class="form-container__label">Cargá una imágen de perfil</label>
+                <input type="file" accept=".jpg, .png" class="form-container__input">
+                <span class="form-container__error "></span>
+            </div>
+            <div class="form-container">
+                <input type="password" placeholder="Contraseña" class="form-container__input">      
+                <span class="form-container__error "></span>  
+            </div>
+            <div class="form-container">
+                <input type="password" placeholder="Confirmar contraseña" class="form-container__input">     
+                <span class="form-container__error "></span>     
+            </div>
+            <div class="form-container">
+                <button type="submit" class="form-container__button">Enviar</button>
+                <button type="reset" class="form-container__button">Borrar</button>
+            </div>            
+        </form>
+
+    </main>
+
+
+    <footer>
+        <article class="footer-info">     
+            <i class="fas fa-credit-card"></i>       
+            <h3><b>Pagá con tarjeta o en efectivo</b></h3>
+            <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
+                puntos de pago. ¡Y siempre es seguro!</p>
+        </article>
+        <article class="footer-info">
+            <i class="fas fa-gift"></i>
+            <h3><b>Envío gratis desde $2.500</b></h3>
+            <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+                productos. Es un beneficio de Mercado Puntos.</p>
+        </article>
+        <article class="footer-info">
+            <i class="fas fa-user-shield" width="50px"></i>
+            <h3><b>Seguridad, de principio a fin</b></h3>
+            <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+                porque estás siempre protegid@.</p>
+        </article>
+        <article>
+            <p class="copyright">Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+        </article>
+    </footer>
     
 </body>
 </html>

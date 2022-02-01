@@ -1,0 +1,274 @@
+* {
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;  
+      
+}
+
+body {
+    background-color: #ebebeb;   
+    color: #666
+}
+
+header {
+    background-color: #EAC926;
+}
+
+.header-container {
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.logo {
+    width: 50%;
+    padding: 5px;      
+}
+.logo img {
+    width: 100%;
+}
+.search-bar {
+    width: 50%; 
+}
+
+.search-bar--background {
+    display: flex;    
+    justify-content: space-around;   
+    align-items: center; 
+    background-color: white;
+    margin: 11px ;
+    padding: 5px;
+    border-radius: 7px;
+}
+.search-bar input {
+    width: 80%;
+    height: 28px;
+    border-style: none;    
+    background-color: transparent;
+}
+
+.fa-search {    
+    width: 23px;
+    height: 23px;     
+    padding: 3px 8px;    
+    border-left: 1px solid #ebebeb ;
+    
+}
+.header__title__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+h3 {
+    text-align: center;
+    font-size: 12px;
+}
+.fa-bars {
+    font-size: 22px;
+}
+.burger-menu-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;     
+    
+}
+.burger-menu {   
+    display: flex;
+    align-items: center;
+    justify-content: center;     
+    background: #1259c3;
+    padding: 5px;
+    margin-bottom: 5px;
+    
+    border-radius: 5px;
+    color: #ebebeb;
+}
+
+nav a, footer p{
+    font-size: 12px;    
+    text-decoration: none;
+    color: #666;
+} 
+
+main {
+    margin: auto;
+    width: 90vw;   
+}
+
+
+
+.form {
+    width: 100%;   
+}
+.form-container {
+    width: 100%;
+    margin: 25px 0;
+
+}
+.form-container__input {
+    width: 100%;
+    padding: 12px 13px;
+    border-radius: 5px;
+    border-style: none;
+}
+.form-container__label {
+    display: block;
+    margin-bottom: 5px;
+}
+.radio-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.radio-container__article {
+    width: 80%;
+    margin: 4px 0;
+}
+
+.form-container__button {
+    border-style: none;
+    background-color: #1259c3;
+    color: white;
+    padding: 10px 15px;
+    margin-right: 22px;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+
+
+footer {
+    background-color: white;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.footer-info {
+    text-align: center;    
+}
+
+footer article i{
+    color: #1259c3;    
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.copyright {
+    margin: 10px 0;
+}
+
+nav {
+    display: none;
+}
+
+
+@media (min-width: 361px) and (max-width: 768px){
+
+    .logo {
+        width: 33%;
+            
+    }    
+    .search-bar {
+        width: 33%; 
+    }
+    .header__title__container {
+       
+        width: 33%;
+    }
+
+    
+    .burger-menu{
+        display: none;
+    }
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;    
+        
+    }
+    .nav-shop {
+        display: flex;
+        list-style: none;
+        justify-content: space-around;
+        width: 45vw;
+        padding: 0px;
+    }
+    .nav-personal {
+        display: flex;
+        list-style: none;
+        justify-content: space-around;
+        width: 45vw;
+        padding: 0px;
+    }
+    .nav-personal li{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    .nav-personal i {
+        margin: 2px;
+    }    
+    footer {
+        padding: 15px;
+        margin-top: 15px;
+    }
+
+}
+
+@media (min-width: 769px) {
+    /* Estilos de Desktop */
+    .logo {
+        width: 33%;
+            
+    }    
+    .search-bar {
+        width: 33%; 
+    }
+    .header__title__container {
+       
+        width: 33%;
+    }
+
+     
+    .burger-menu{
+        display: none;
+    }
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;    
+        
+    }
+    .nav-shop {
+        display: flex;
+        list-style: none;
+        justify-content: space-around;
+        width: 45vw;
+        padding: 0px;
+    }
+    .nav-personal {
+        display: flex;
+        list-style: none;
+        justify-content: space-around;
+        width: 45vw;
+        padding: 0px;
+    }
+    .nav-personal li{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    .nav-personal i {
+        margin: 2px;
+    }
+    footer {
+        padding: 15px;
+        margin-top: 15px;
+    }
+
+}
