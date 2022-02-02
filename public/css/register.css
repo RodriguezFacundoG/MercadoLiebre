@@ -23,10 +23,14 @@ header {
 
 .logo {
     width: 50%;
-    padding: 5px;      
+    padding: 5px;    
+    display: flex;
+    text-align: center;
+    justify-content: flex-start;  
 }
 .logo img {
-    width: 100%;
+    width: 100%;    
+    max-width: 280px;    
 }
 .search-bar {
     width: 50%; 
@@ -95,13 +99,16 @@ nav a, footer p{
 
 main {
     margin: auto;
-    width: 90vw;   
+    width: 90vw;  
+    display: flex;
+    justify-content: center; 
 }
 
 
 
 .form {
     width: 100%;   
+    max-width: 550px;
 }
 .form-container {
     width: 100%;
@@ -154,6 +161,10 @@ footer article i{
     color: #1259c3;    
     font-size: 2em;
     margin-bottom: 10px;
+    transition: color 300ms ease;
+}
+footer article i:hover {
+    color: #0022AA;
 }
 
 .copyright {
@@ -192,14 +203,22 @@ nav {
     .nav-shop {
         display: flex;
         list-style: none;
-        justify-content: space-around;
+        justify-content: flex-start;
         width: 45vw;
         padding: 0px;
+    }
+    .nav-shop li{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: center;
+        margin-left: 10px;
     }
     .nav-personal {
         display: flex;
         list-style: none;
-        justify-content: space-around;
+        justify-content: flex-end;
         width: 45vw;
         padding: 0px;
     }
@@ -207,16 +226,17 @@ nav {
         display: flex;
         align-items: center;
         justify-content: center;
-       
+        flex-wrap: wrap;
+        text-align: center;
+        margin-right: 10px;
     }
     .nav-personal i {
         margin: 2px;
     }    
-    footer {
+    footer {    
         padding: 15px;
         margin-top: 15px;
     }
-
 }
 
 @media (min-width: 769px) {
@@ -246,14 +266,22 @@ nav {
     .nav-shop {
         display: flex;
         list-style: none;
-        justify-content: space-around;
+        justify-content: flex-start;
         width: 45vw;
         padding: 0px;
+    }
+    .nav-shop li{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: center;
+        margin-left: 20px;
     }
     .nav-personal {
         display: flex;
         list-style: none;
-        justify-content: space-around;
+        justify-content: flex-end;
         width: 45vw;
         padding: 0px;
     }
@@ -261,14 +289,29 @@ nav {
         display: flex;
         align-items: center;
         justify-content: center;
-       
-    }
+        flex-wrap: wrap;
+        text-align: center;
+        margin-right: 30px;
+    }    
     .nav-personal i {
         margin: 2px;
     }
-    footer {
+    footer {    
         padding: 15px;
         margin-top: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+    
+    }
+    
+    .footer-info {
+        width: 30%;      
+    }
+    
+    .footer-info--legal {
+        width: 100%;    
     }
 
 }
