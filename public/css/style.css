@@ -114,19 +114,21 @@ main img {
 main article {
     padding: 5px 0;
     margin: 5px 0;
-    background-color: white; 
-    
-    height: 365px;
-    overflow: hidden;
-    transition: 700ms height;
+    background-color: white;    
 } 
-main article:hover {
-    height: 410px;
-}
 
 .prod {
     border-top: 1px solid #ebebeb;
     padding: 15px;
+
+    height: 68px;
+    overflow: hidden;
+    /* transition: height 700ms ease; */
+    
+}
+.prod:hover {
+    /* height: 98px; */
+    
 }
 
 .truck-container {
@@ -134,6 +136,8 @@ main article:hover {
     align-items: center;
     justify-content:center;
     position: relative;
+    overflow: initial;
+    
 }
 
 .fa-truck {
@@ -151,6 +155,7 @@ main article:hover {
     top: -30px;
     transition: transform 700ms linear;
     cursor: pointer;
+    z-index: 10;
 }
 .fa-truck:hover {
     transform: rotate(-90deg);    
@@ -234,8 +239,11 @@ nav {
     }
     
     .products article {
-        box-shadow: 0px 0px 10px rgb(100,100,100 );
+        transition: box-shadow 500ms ease;        
         width: 48%;
+    }
+    .products article:hover {
+        box-shadow: 0px 0px 10px rgb(100,100,100 );
     }
     .burger-menu{
         display: none;
@@ -303,11 +311,14 @@ nav {
 
     .description {
         display: block;
-    }
-    .products article {
-        box-shadow: 0px 0px 10px rgb(100,100,100 );
-        width: 23%;
     }    
+    .products article {
+        transition: box-shadow 500ms ease;        
+        width: 23%;
+    }
+    .products article:hover {
+        box-shadow: 0px 0px 10px rgb(100,100,100 );
+    } 
     .burger-menu{
         display: none;
     }
