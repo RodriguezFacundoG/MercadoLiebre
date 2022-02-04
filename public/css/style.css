@@ -119,16 +119,14 @@ main article {
 
 .prod {
     border-top: 1px solid #ebebeb;
-    padding: 15px;
-
-    height: 68px;
-    overflow: hidden;
-    /* transition: height 700ms ease; */
-    
+    padding: 15px;      
 }
-.prod:hover {
-    /* height: 98px; */
-    
+.products h4 {    
+    color: white;
+    transition: color 500ms ease;
+}
+.products h4:hover {    
+    color: initial;    
 }
 
 .truck-container {
